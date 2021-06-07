@@ -1,0 +1,304 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="class,assignment,html,css,php">
+		<meta name="description" content="Class 03 Assignment By Emil">
+		<meta name="author" content="Emil Sadekin Islam">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Class 03 Assignment By Emil</title>
+
+		<style>
+			section{width:40%; margin:auto;}
+			h2{text-align:center;}
+			table{background-color: lightblue;}
+			td{padding: 5px;}
+			textarea:focus{width:99%;}
+			footer{text-align: center; margin-top: 30px;}
+			.ulol{padding-top:50px;}
+		</style>
+		
+	</head>
+
+	<body>
+
+		<section>
+			<h2>Registration Form</h2>
+			<!-- Registration Form Start -->
+			<form action="#">
+				<table>
+					<tr>
+						<!-- This is first name input area -->
+						<td>
+							<label for="fname">First Name:</label>
+							<input id="fname" type="text" placeholder="Enter First Name" required >
+						</td>
+						<!-- This is last name input area -->
+						<td>
+							<label for="lname">Last Name:</label>
+							<input id="lname" type="text" placeholder="Enter Last Name" required >
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is email input area -->
+						<td>
+							<label for="email">E-Mail:</label>
+							<input id="email" type="email" placeholder="Enter E-mail Address" required >
+						</td>
+						<!-- This is phone input area -->
+						<td>
+							<label for="number">Phone:</label>
+							<input id="number" type="number" placeholder="+880" required >
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is address input area -->
+						<td colspan="2">
+							<label for="address">Address:</label>
+							<input style="width: 86%;" id="address" type="text" placeholder="Enter Your Address" required >
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is password input area -->
+						<td>
+							<label for="pass">Password:</label>
+							<input id="pass" type="password" placeholder="Enter Password" required >
+						</td>
+						<!-- This is confirm password input area -->
+						<td>
+							<label for="re-pass">Confirm Password:</label>
+							<input id="re-pass" type="password" placeholder="Enter Confirm Password" required >
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is date of birth input area -->
+						<td>
+							<label for="dob">Date Of Birth:</label>
+							<input id="dob" type="date" required>
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is gender label text -->
+						<td>
+							<label>Gender:</label>
+						</td>
+						<!-- This is age label text -->
+						<td>
+							<label for="age">Age:</label>
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is male gender input area -->
+						<td>
+							<input name="gender" id="male" type="radio">
+							<label for="male">Male</label>
+						</td>
+						<!-- This is age list -->
+						<td>
+							<select name="#" id="age">
+								<option value="">--Select Age--</option>
+								<option value="01">01</option>
+								<option value="02">02</option>
+								<option value="03">03</option>
+								<option value="04">04</option>
+								<option value="05">05</option>
+								<option value="06">06</option>
+								<option value="07">07</option>
+								<option value="08">08</option>
+								<option value="09">09</option>
+								<option value="10">10</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is female gender input area -->
+						<td>
+							<input name="gender" id="female" type="radio" required>
+							<label for="female">Female</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is others gender input area -->
+						<td>
+							<input name="gender" id="others" type="radio" required>
+							<label for="others">Others</label>
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is about label text -->
+						<td>
+							<label for="about">About You:</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is about you input area -->
+						<td colspan="2">
+							<textarea name="about" id="about" cols="20" rows="3" placeholder="Tell Yourself" required></textarea>
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is course label text -->
+						<td>
+							<label>Our Course</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is Graphics Design course input -->
+						<td>
+							<input id="graphics" type="checkbox">
+							<label for="graphics">Graphics Design</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is Video Edting course input -->
+						<td>
+							<input id="video" type="checkbox">
+							<label for="video">Video Edting</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is Wordperss course input -->
+						<td>
+							<input id="wordperss" type="checkbox">
+							<label for="wordperss">Wordperss</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is Web Developement course input -->
+						<td>
+							<input id="web" type="checkbox">
+							<label for="web">Web Developement</label>
+						</td>
+					</tr>
+
+					<tr>
+						<!-- This is Mentor label text -->
+						<td>
+							<label for="mentor">Our Mentor</label>
+						</td>
+					</tr>
+					<tr>
+						<!-- This is Mentor selection list options -->
+						<td>
+							<select name="#" id="mentor">
+								<option value="">--Select One--</option>
+
+								<optgroup label="Graphics Design">
+									<option value="Mentor-01">Mentor-01</option>
+									<option value="Mentor-02">Mentor-02</option>
+									<option value="Mentor-03">Mentor-03</option>
+								</optgroup>
+
+								<optgroup label="WordPress">
+									<option value="Mentor-01">Mentor-01</option>
+									<option value="Mentor-02">Mentor-02</option>
+									<option value="Mentor-03">Mentor-03</option>
+								</optgroup>
+							</select>
+						</td>
+					</tr>
+
+					<tr>
+						<td>
+							<input type="submit" value="Submit">
+							<input type="reset" value="Reset">
+						</td>
+					</tr>
+				</table>
+			</form>
+			<!-- Registration Form End -->
+		</section>
+
+		<section>
+			<h1 class="ulol">UL & OL tags...</h1>
+			<h3>In professional technical-writing contexts, you must use a specific style of lists, like the one presented here.</h3>
+
+			<ul>
+				<li>Use lists to highlight or emphasize text or to enumerate sequential items.</li>
+				<li>Make list items <a href="#">parallel in phrasing.</a></li>
+				<li>Make sure that each item in the list reads grammatically with the lead-in.</li>
+				<li>Use a lead-in to introduce the list items and to indicate the meaning or purpose of the list (and punctuate it with a colon).</li>
+				<li>When two items are alternatives, use a bulleted list (with or between).</li>
+			</ul>
+			<br>
+
+			<h3>It's difficult to state guidelines on choosing between the various kinds of lists, but here's a stab at it:</h3>
+			<ol>
+				<li>Most importantly, use numbered lists for items that are in a required order.</li>
+				<li>With in-sentence lists, there are no conventions when to use letters (a), (b), and so on, as opposed to numbers (1), (2), and so on.</li>
+				<li>Use vertical lists as opposed to in-sentence lists when you want the emphasis provided by the vertical presentation.</li>
+				<li>Within an individual report, use in-sentence lists and vertical lists consistently for similar situations.</li>
+				<li>Mix-up between numbered and bulleted lists</li>
+			</ol>
+			<br>
+
+			<h3>It's difficult to state guidelines on choosing between the various kinds of lists, but here's a stab at it:</h3>
+			<ol type="A">
+				<li>Use of single parentheses on the list-item number or letter (in other words, 1) or (1)</li>
+				<li>Run-over lines not aligned with the text of list items</li>
+				<li>Lack of a strong lead-in sentence introducing list items, and lack of a colon to punctuate lead-ins</li>
+				<li>Within an individual report, use in-sentence lists and vertical lists consistently for similar situations.</li>
+				<li>Mix-up between numbered and bulleted lists</li>
+			</ol>
+			<br>
+
+			<h3>It's difficult to state guidelines on choosing between the various kinds of lists, but here's a stab at it:</h3>
+			<ol type="a">
+				<li>Use of single parentheses on the list-item number or letter (in other words, 1) or (1)</li>
+				<li>Run-over lines not aligned with the text of list items</li>
+				<li>Lack of a strong lead-in sentence introducing list items, and lack of a colon to punctuate lead-ins</li>
+				<li>Within an individual report, use in-sentence lists and vertical lists consistently for similar situations.</li>
+				<li>Mix-up between numbered and bulleted lists</li>
+			</ol>
+			<br>
+
+			<h3>It's difficult to state guidelines on choosing between the various kinds of lists, but here's a stab at it:</h3>
+			<ol type="I">
+				<li>Use of single parentheses on the list-item number or letter (in other words, 1) or (1)</li>
+				<li>Run-over lines not aligned with the text of list items</li>
+				<li>Lack of a strong lead-in sentence introducing list items, and lack of a colon to punctuate lead-ins</li>
+				<li>Within an individual report, use in-sentence lists and vertical lists consistently for similar situations.</li>
+				<li>Mix-up between numbered and bulleted lists</li>
+			</ol>
+			<br>
+
+			<h3>It's difficult to state guidelines on choosing between the various kinds of lists, but here's a stab at it:</h3>
+			<ol type="i">
+				<li>Use of single parentheses on the list-item number or letter (in other words, 1) or (1)</li>
+				<li>Run-over lines not aligned with the text of list items</li>
+				<li>Lack of a strong lead-in sentence introducing list items, and lack of a colon to punctuate lead-ins</li>
+				<li>Within an individual report, use in-sentence lists and vertical lists consistently for similar situations.</li>
+				<li>Mix-up between numbered and bulleted lists</li>
+			</ol>
+			<br>
+		</section>
+
+		<section>
+			<h1 class="ulol">Audio & Video</h1>
+
+			<audio controls>
+				<source src="audio/hak.mp3" type="audio/mpeg">
+			</audio>
+
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/14ZH1b9d7aM" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+			<video width="560" height="240" controls>
+				<source src="video/hak.mp4" type="video/mp4">
+			</video>
+		</section>
+
+
+		<footer>
+			<hr>
+			&copy; Emil Sadekin Islam  | All rights reserved | 2021
+		</footer>
+	</body>
+</html>
